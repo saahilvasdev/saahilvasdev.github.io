@@ -1,0 +1,36 @@
+p{
+    /* font size and weight */
+    font-size: 20 px;
+    font-weight: bold;
+}
+/* maniupulation of image. img:hover makes my image hidden when you hover */
+
+img:hover{
+    visibility:hidden;
+}
+/* Makes body have a background grey . specific tag*/
+body{
+    background-color:lightgray;
+}
+
+/* visbility of elements  */
+div.showHidden p.defaultHidden {
+    visibility: hidden;
+    text-align: center;
+}
+div.showHidden:hover p.defaultHidden {
+    visibility: visible;
+    text-align: center;
+}
+
+/* Position and alignment of elements, photo*/
+#profile{
+    margin-left: 327px;
+    width: 250px;
+}
+
+/* font size and weight */
+#shrug{
+    font-size: 300px;
+    font-weight: 1000px;
+}

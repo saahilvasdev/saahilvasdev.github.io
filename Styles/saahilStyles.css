@@ -1,0 +1,73 @@
+body{ /* this is responsible for changing the whole background color */
+    background: rgb(245, 248, 211);
+}
+
+h1{ /* This changes all h1 elements to bold, 50px size, and aligned in the center of the page */
+    font-weight: bold;
+    font-size: 50px;
+    text-align: center;
+}
+
+h2{ /* This centers all h2 elements and changes the text-color to purple */
+    text-align: center;
+    color:purple;
+}
+
+h3{ /* This changes all h3 elements to yellow */
+    color: #CAB600;
+}
+  
+a:hover{ /* When the user hover's their mouse over an "a" tag, the color of the text changes to red */
+    color: red;
+}
+
+.colorChange{  /* This class changes the color of the text to dodgerblue */
+    color: dodgerblue;
+}
+
+.colorChange2{ /* This class changes the color of the text to orange */
+    color: #ff9900;
+}
+
+#differentColor{ /* This id changes the color of the text to violet */
+    color: violet; 
+}
+
+#differentColor2{ /* This id changes the color of the text to burgandy */
+    color: rgba(150, 4, 4, 0.842); 
+}
+
+.imageCenter{ /* This class is resposnbile for centering images */ 
+    display: block; 
+    margin-left: auto; /* the margin of the left and right is automatically adjusted */
+    margin-right: auto;
+}
+
+.imageRight{ /* This class is responsible for moving images all the way to the right */
+    display: block;
+    float: right;
+}
+
+*{ /* this is responsible for all elements to have a border-box box-sizing */
+    box-sizing: border-box;
+}
+
+.column{ /* This class is responsible for float images to the left with a width that is 1/3 of the page. Also gives 5px padding between the images */
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+}
+
+.row::after{ /* This class is responsible for putting the images in table display */
+    content: "";
+    display: table;
+    clear: both;
+}
+
+#pictureColorChange{ /* This class changes the grayscale of an image */
+    filter: grayscale(75%);
+}
+
+#pictureColorChange2{ /* This class inverts the image */
+    filter: invert(100%);
+}

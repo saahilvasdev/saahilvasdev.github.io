@@ -1,0 +1,115 @@
+<!doctype html>
+<html>
+    <head> 
+        <!-- Anything with "" are things asked of us to do in the Cascading Style Sheets (Groups) project-->
+        <!-- so if a comment has "", the code directly below correlates with what is asked of us to do-->
+        <title>Kenneth's Page</title>
+        <!-- "with an externally linked stylesheet text file using the <link rel=""> tag in the <head> tag" -->
+        <link rel = "stylesheet" href = "Styles/kennethStyles.css">
+        <!-- "using an embedded stylesheet using the <style> tag in the <head> tag" -->
+        <style>
+            /* "a specific tag like, say, you want all <a> tags to be styled in a particular way," */
+            h1{
+                color:rgb(255, 255, 255);
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <div> 
+                <!--this is so that my header has a seperate colorblock compared to the rest of the page background-->
+                <!-- "and in-line as a style="" attribute within another HTML tag "-->
+                <div style="background-color:#f73535">
+                    <!-- This adds color to my name and its using Header 1 with the help of span-->
+                    <h1> Kenneth Nguyen </h1>
+                </div>
+                <!-- width creates the width of the table, 300 is the value I choose how big I want it to -->
+                <!-- "only certain subsets of tags by using the class="" attribute in a tag and specifying .class in the stylesheet,"-->
+                <table class = "contactInfo">
+                    <tr>
+                        <td><strong>Contact List:</strong></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Email</strong></td>
+                        <td>kennethmainguyen@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Discord</strong></td>
+                        <td>kinokima (Kenneth)#3924</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Instagram</strong></td>
+                        <td>kennethmnguyen</td>
+                    </tr>
+                </table>
+            </div>
+            <div> 
+                <!-- using header 2 and adding a salmon color to my name-->
+                <!-- with the help of span, I apply a personal style to the section where my "about me" is located-->
+                <!-- background color is the background, color is the text color, and padding adds spacing to the text so looks better-->
+                    <h2><span style="background-color:#f73535; color:rgb(255, 255, 255); padding: 0px 15px;">About Me  </span></h2>
+                <p> <!-- using P to add text/a paragraph below the About Me to say stuff to the viewer-->
+                    I am in my second year at the University of Washington Bothell studying interactive media design mainly. Its something I'm intes
+                    If you want to see my <em>digital portfolio</em>, its on <!-- this a href tag allows me to produce a clickable link. Also made it strong so it bolds out more -->
+                    <a href="https://kennethmnguyen.com"><strong>kennethmnguyen.com</strong></a>
+                </p>
+                <!-- this is to put a picture of myself on the website. Width of 500 so it fits right on the page-->
+                <!-- "or specific unique elements that need to be styled a certain way through using the id="" attribute and #id in the stylesheet."-->
+                <img id="profileImage" src= "Media/SunGun.jpg">
+                <img id="profileImageTwo" src= "Media/Myself2.jpg">
+                <img id="profileImageThree" src= "Media/NoTrust.png">
+                <p>
+                    During this COVID lockdown I've honestly been sleeping for very long times and not being the most productive.
+                    Watching a bunch of youtube videos and playing various different games. Glady though I was able to get ahold of some weights
+                    so I can still work out during a time where everything is closed.
+                </p>
+                <!-- creating a list and sectioning it off with adding colored text and a color block-->
+                <div>
+                    <h3><span style="background-color:#f73535; color:rgb(255, 255, 255); padding: 0px 15px">Heres some games I've been playing during this COVID lockdown</span></h3>
+                </div>
+                <!-- creates a bullet list so I can name stuff down-->
+                <ul>
+                    <li>The Division 2</li>
+                    <li>TorchLight II</li>
+                    <li>Dragon Ball FighterZ</li>
+                    <li> DAEMON X MACHINA</li>
+                    <li>World War Z</li>
+                </ul>
+                <!-- creating a list and sectioning it off with adding colored text and a color block-->
+                <div>
+                    <h3><span style="background-color:#f73535; color:rgb(255, 255, 255); padding: 0px 15px">My top 6 shoes that I wear normally</span></h3>
+                </div>
+                <!-- creating a number list so I can name stuff in order-->
+                <ol>
+                    <li>1985 Jordan 1, Chicago/Neutral (or Natural) Grey/UNC colorway (Luckily I've been able to find 3 pairs that are wearable in my size)</li>
+                    <li>Triple White Bapesta (basically knockoff Air force 1s)</li>
+                    <li>Off White Blazers</li>
+                    <li>Basic Old Skool Vans</li>
+                    <li>Rick Owen Ramones</li>
+                    <li>New balance 990v4</li>
+                </ol>
+            </div>
+            <!-- "and hover and visibility changes links or other element" --> 
+            <!-- "only certain subsets of tags by using the class="" attribute in a tag and specifying .class in the stylesheet,"-->
+            <div class="showHidden">
+                <p>Theres a secret. Hover over this text to show it!</p>
+                <!-- "only certain subsets of tags by using the class="" attribute in a tag and specifying .class in the stylesheet,"-->
+                <p class="defaultHidden"><strong>
+                    ░▄▀▄▀▀▀▀▄▀▄░░░░░░░░░<br>
+                    ░█░░░░░░░░▀▄░░░░░░▄░<br>
+                    █░░▀░░▀░░░░░▀▄▄░░█░█<br>
+                    █░▄░█▀░▄░░░░░░░▀▀░░█<br>
+                    █░░▀▀▀▀░░░░░░░░░░░░█<br>
+                    █░░░░░░░░░░░░░░░░░░█<br>
+                    █░░░░░░░░░░░░░░░░░░█<br>
+                    ░█░░▄▄░░▄▄▄▄░░▄▄░░█░<br>
+                    ░█░▄▀█░▄▀░░█░▄▀█░▄▀░<br>
+                    ░░▀░░░▀░░░░░▀░░░▀░░░<br>
+                    <!-- "or specific unique elements that need to be styled a certain way through using the id="" attribute and #id in the stylesheet."-->
+                <span id="aggresive">SIR GUCCI LEAN</span><br>
+                </strong></p>
+            </div>
+        </div>
+    </body>
+   
+</html>

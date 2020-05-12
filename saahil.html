@@ -1,0 +1,154 @@
+<!doctype html>
+<html>
+    <head> 
+        <title>Saahil's Page</title>
+        <link rel = "stylesheet" href = "Styles/saahilStyles.css"> <!--Referencing the style sheet for this HTML page-->
+    </head>
+    <body>
+        <div>
+            <div style="background-color:purple"> 
+                <h1><span style = "color:whitesmoke">Saahil Vasdev &#128526;</span></h1> 
+            </div>
+    
+            <!--Using a style block, I was align the introduction section of my webpage-->
+            <style>
+                .alignIntro{
+                    text-align:center;
+                }
+            </style>
+    
+            <div>
+                <h2 align = "center">About me</h2> <!--Aligned the "About me" title to the center-->
+            
+                <p class = "alignIntro"> <!--Using the class that I made above, the following two paragraphs are aligned to the center-->
+                    I am currently a sophomore at the University of Washington Bothell studying Computer Science &
+                    Software Engineering. I am looking forward to build onto my foundation and expanding into areas 
+                    that involve product vision and developing.
+                </p>
+                
+                <p class = "alignIntro">
+                    I'm a big fan of sports especially basketball. I've been playing basketball since I was 5 years old. You
+                    can always catch me at LA Fitness shooting some ball. As you can see from the photo, I am a big Lakers fan.
+                    The mural was painted by Los Angeles artist <a href = "https://www.instagram.com/gz.jr/?hl=en"><strong>Gustavo Zermeño Jr.</strong></a> 
+                    when LeBron James just signed with the Lakers.
+                </p>
+    
+                <div class = "row"> <!--This class can be found in my "style.css" file, where it is responsible for putting the three images side-by-side-->
+                    <div class = "column">
+                        <img src = "Media/LA.jpg" width = "500" alt="A picture of Saahil at a Lakers mural" title="Lakers Mural">
+                    </div>
+                    <!--Using the column class, I was able to align the pictures-->
+                    <div class = "column" id = "pictureColorChange"> <!--The "pictureColorChange" id is responsible for changing the grayscale of the picture this can be found in the "style.css" file-->
+                        <img src = "Media/LA.jpg" width = "500" alt="Altered picture Lakers mural" title="Grayscaled Lakers Mural">
+                    </div>
+                    <div class = "column" id = "pictureColorChange2"> <!--The "pictureColorChange2" id is responsible for inverting the picture-->
+                        <img src = "Media/LA.jpg" width = "500" alt="Altered picture Lakers mural" title="Inverted Lakers Mural">
+                    </div>
+                    <!--Using in-line styling, I was able to center the caption underneath the three photos-->
+                    <p style = "text-align: center;"><strong> The photo on the left is the original photo, the middle photo is altered by changing the grayscale, and the photo on the right is altered by inverting. </strong></p>
+                 </div>
+                <p>
+                    I've been gaming since I was a little kid. My gaming journey all started with a Nintendo 64. When I was given
+                    Super Mario 64, I was hooked. Ever since then, I've been playing video games. Recently, I've had the chance in playing
+                    Warzone and Valorant which have turned out to be very enjoyable games during the quarantine. 
+                </p> 
+                
+                <!--This style block is responsible for the blur animation-->
+                <style type = "text/css">
+                .blurOut img{
+                    transition: all 1s ease;
+                    -webkit-filter: blur(25px); /* This is responsible for blurring the image 25px*/
+                    border: 5px solid black; /* This is a border that is around the image */
+                    filter: blur(25px);
+                    margin-left: 20px;
+                    margin-bottom: 20px;
+                }
+    
+                /* This style block is responsible for unblurring the image when the user has their mouse over the image */
+                .blurOut img:hover{
+                    -webkit-filter:blur(0px); /* Sets the image blur to 0px */
+                    filter: blur(0px);
+                }
+                </style>
+    
+                <div class = "blurOut"> <!--This allows the image to be blurred and unblurred using the blurOut class-->
+                    <img src = "Media/swag.png" width = "400" alt = "A picture of the music I'm listening to right now" title = "Clinton Swag" style = "float: right;" margin-right: 10px; margin-bottom: 5px>
+                </div>
+            
+                <p>My favorite games of all-time:</p>
+                
+                <ol class = "colorChange"> <!--Change the colors of the text using the colorChange class found in the "style.css"-->
+                    <li id = "differentColor">Super Mario Sunshine</li>
+                    <li>Super Mario 64</li>
+                    <li id = "differentColor">Legend of Zelda: Ocarina of Time</li>
+                    <li>Red Dead Redemption 2</li>
+                    <li id = "differentColor">GTA V</li>
+    
+                </ol>
+    
+                <!--The text is modified by changing the font-size, the font, and the alignment using the in-line style-->
+                <p style = "font-size: 35px; font-family: cursive; text-align: center;">
+                    Hover your mouse over the blurred image to see a suprise
+                </p>
+    
+                <p>Here are some of the music artists I listen to:</p>
+                
+                <ul class = "colorChange2"> <!--Change the colors of the text using the colorChange2 class found in the "style.css"-->
+                    <li>Kanye West</li>
+                    <li id = "differentColor2">Jay-Z</li>
+                    <li>Travis Scott</li>
+                    <li id = "differentColor2">Lil Uzi Vert</li>
+                </ul>
+                </p>
+                
+                <table border = "1" width = "300">
+                
+                    <tr>
+                        <th>My Favorite...</th>
+                        <th>Answer</th>
+                    </tr>
+                    <tr> 
+                        <td>Fast Food Spot</td>
+                        <td>Chick-Fil-A</td>
+                    </tr>
+                    <tr>
+                        <td>Vacation Spot</td>
+                        <td>Cancun, Mexico</td>
+                    </tr>
+                    <tr>
+                        <td>Podcast</td>
+                        <td>All the Smoke</td>
+                    </tr>
+                    <tr>
+                        <td>Brand</td>
+                        <td>Nike</td>
+                    </tr>
+                    <tr>
+                        <td>Social Media</td>
+                        <td>Twitter</td>
+                    </tr>
+                </table>
+    
+                <p>
+                    During the quarantine, I've been catching up on a lot of TV shows. I recently started watching a show on
+                    Netflix called <em>Trailer Park Boys.</em> If you are into comedy I would totally recommend this show to you.
+                </p>
+    
+                <h3>What I want to learn</h3> 
+                <p>
+                    Having the opportunity to learn languages such as Java, C#, & C++, learning HTML and CSS was something I've always wanted to learn. When I was selecting courses
+                    for this quarter, I was so glad that UWB offered a class that highlighted the basics of HTML and CSS. With the skills
+                    I learned from this class, I hope to make a basic website in the future to showcase some of my work from my classes taken
+                    here at UWB. 
+                </p>
+            
+                <h3>Get in touch with me!</h3>
+                <p>
+                    If you want to discuss anything, you can reach me through my email, <strong>skv21@uw.edu</strong>. You can keep up to date with my <a href = "https://github.com/saahilvasdev">GitHub</a> account to see what coding projects I'm currently working on. If you have a <a href = "http://linkedin.com/in/saahil-vasdev">LinkedIn</a>, please connect with me on there as I look 
+                    forward to discuss any sort of job opportunities!
+                </p>
+            </div>
+        </div>
+    </body>
+    
+</html>

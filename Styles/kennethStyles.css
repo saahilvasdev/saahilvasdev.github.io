@@ -1,0 +1,56 @@
+body{
+    /* "a specific tag like, say, you want all <a> tags to be styled in a particular way," */
+    background-color:#fa9898;
+}
+/* "only certain subsets of tags by using the class="" attribute in a tag and specifying .class in the stylesheet," */
+.contactInfo {
+    border-color: black;
+    border: 100px;
+    width: 357px;
+    background-color: rgb(243, 199, 201);
+    margin-left: auto;
+    margin-right: auto;
+    /* "font weight:" */
+    font-weight: light;
+    /* "font size:" */
+    font-size: 17px;
+}
+
+.contactInfo td{
+    /* "text treatment:" */
+    text-align: left;
+    background-color: rgb(255, 255, 255);
+}
+
+/* "and hover and visibility changes links or other element" */
+div.showHidden p.defaultHidden {
+    visibility: hidden;
+    text-align: center;
+}
+div.showHidden:hover p.defaultHidden {
+    visibility: visible;
+    text-align: center;
+}
+
+/*"manipulation of images,"*/
+/* "or specific unique elements that need to be styled a certain way through using the id="" attribute and #id in the stylesheet."*/
+#profileImage{
+    width: 257px;
+    margin-left: 220px;
+    margin-top: 15px;
+}
+#profileImageTwo{
+    width: 257px;
+    margin-left: 325px;
+    margin-top: 15px;
+}
+#profileImageThree{
+    width: 257px;
+    margin-left: 300px;
+    margin-top: 15px;
+}
+
+#aggresive{
+    font-size: 100px;
+    font-weight: bold;
+}

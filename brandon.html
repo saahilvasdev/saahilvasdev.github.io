@@ -1,0 +1,108 @@
+<!doctype html>
+<html>
+    <head> 
+        <title>Brandon's Page</title>
+        <link rel = "stylesheet" href = "Styles/brandonStyles.css">
+        <style>
+            /* bolds the first column of the contact table */
+            td:first-child {
+                font-weight: bold;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <!-- Using title ID -->
+            <div id="title">
+                <h1>Brandon Hu</h1>
+            </div>
+
+            <div>
+                <h2>About me</h2>
+                <!-- Table for contact info to be neatly organized -->
+                <h3>Contact Info</h3>
+                <!-- Using table class -->
+                <table class="table" width="375">
+                    <tr>
+                        <td>Email</td>
+                        <td>bhu413@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <td>Discord</td>
+                        <td>bhu413#8812</td>
+                    </tr>
+                    <tr>
+                        <td>LinkedIn</td>
+                        <td><a href="https://www.linkedin.com/in/bhu413/">https://www.linkedin.com/in/bhu413/</a></td>
+                    </tr>
+                    <tr>
+                        <td>Github</td>
+                        <td><a href="https://github.com/bhu413">https://github.com/bhu413</a></td>
+                    </tr>
+                </table>
+
+                <p>
+                    I am a currently a junior at the University of Washington Bothell. My major is Applied computing
+                    and I have experience with Java and C++. Currently, I am working at the UW/Cascadia College as 
+                    a student tech consultant where I help patrons with printing and common computer issues.
+                </p>
+
+                <p>Here are a few classes I have taken:</p>
+                <ul>
+                    <li>CSS 142 & 143</li>
+                    <li>CSS 342 & 343</li>
+                    <li>CSS 310</li>
+                    <li>BPHYS 121 & 122</li>
+                    <li>STMATH 124, 125, & 126</li>
+                </ul>
+                
+                <p>
+                    <!-- Linking a wiki to a music piece which has emphasized text -->
+                    I am interested in computer networking and home automation. In my free time I like to game, make
+                    music, or just sleep. During this quarantine, I am trying to learn how to play Chopin's 
+                    <a href="https://en.wikipedia.org/wiki/Nocturne_in_C-sharp_minor,_Op._posth._(Chopin)">
+                        <em>Nocturne No. 20 in C-sharp minor, Op. posth.</em></a> I have a younger brother and a dog.
+                    
+                    <!-- Using span to show favorite color. -->
+                    <!-- Using strong to make it bold so it is easier to tell -->
+                    <strong>
+                        <span style="color:#00a7da">Also, this is my favorite color (or close to it at least).</span>
+                    </strong>
+                </p>
+                
+                <h3>Here is my dog Coco:</h3>
+                <!-- Trying to change pic when hovered -->
+                <!-- Using id with external css -->
+                <img id="dogpic" src = "Media/Brandons_Dog.jpg" alt=" A picture of Brandon's Dog">
+                
+                
+                <!-- Numbered list -->
+                <h3>Five songs I like at the moment</h3>
+                <ol>
+                    <li>Atoms - Said the Sky Remix by RL Grime, Jeremy Zucker, Said the Sky</li>
+                    <li>Higher Ground (feat. Naomi Wild) by ODESZA, Naomi Wild</li>
+                    <li>44 More by Logic</li>
+                    <li>Down Below by Roddy Rich</li>
+                    <li>Best Part (feat. H.E.R.) by Daniel Caesar, H.E.R.</li>
+                </ol>
+
+                <!--INSTR: The images are being displayed funky, overlapping each other, probably because you hardcode their width to 200 pixels in the HTML but have the divs be a percentage. So it works if the browser window is > 1000 pixels but doesn't if the window is narrower.-->
+                <div class="albumimg">
+                    <img src="Media/Album Art/nova.jpg" width="200" alt="NOVA by RL Grime">
+                </div>
+                <div class="albumimg">
+                    <img src="Media/Album Art/a moment apart.jpg" width="200" alt="A Moment Apart by ODESZA">
+                </div>
+                <div class="albumimg">
+                    <img src="Media/Album Art/bobby tarantino.jpg" width="200" alt="Bobby Tarantino II by Logic">
+                </div>
+                <div class="albumimg">
+                    <img src="Media/Album Art/down below.jpg" width="200" alt="Down Below by Roddy Rich">
+                </div>
+                <div class="albumimg">
+                    <img src="Media/Album Art/Freudian.jpg" width="200" alt="Freudian by Daniel Caesar">
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
