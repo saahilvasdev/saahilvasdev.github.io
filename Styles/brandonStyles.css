@@ -20,12 +20,6 @@ p, ol, ul, h4 {
     color: #ffffff;
 }
 
-/* pretty sure bootstrap overrode this so I commented it out 
-.table, th, td {
-    border: 1px solid black;
-}
-*/
-
 #title {
     font-size: large;
     text-align: center;
@@ -42,6 +36,8 @@ p, ol, ul, h4 {
     border-radius: 4px;
     border: 1px solid #ddd;
     padding: 5px;
+    /* Bottom margin to create space between rows */
+    margin-bottom: 5%;
 }
 
 /* make album images a bit transparent */

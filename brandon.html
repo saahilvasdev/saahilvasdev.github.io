@@ -17,7 +17,7 @@
     </head>
     
     <body>
-        <!-- Got from this site: https://getbootstrap.com/docs/4.0/components/navbar/ -->
+        <!-- Got navbar from this site: https://getbootstrap.com/docs/4.0/components/navbar/ -->
         <nav class="navbar navbar-expand-lg navbar-dark navbar fixed-top" style="background-color: #158bda;">
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav mr-auto">
@@ -42,13 +42,14 @@
             <h1>Brandon Hu</h1>
         </div>
 
-        
-        <div class="container">
+        <!-- Using bootstrap container for all content -->
+        <div class="container-md">
+            <!-- Divided content into rows -->
             <div class="row">
                 <div class="col-md">
                     <!-- Table for contact info to be neatly organized -->
                     <h3>Contact Info</h3>
-                    <!-- Using table class -->
+                    <!-- Using dark striped table class -->
                     <table class="table table-dark table-striped table-bordered table-sm col-sm-1">
                         <tr>
                             <th scope="row">Email</th>
@@ -110,9 +111,9 @@
             <div class="row">
                 <div class="col-lg">
                     <h3>Here is my dog Coco:</h3>
-                    <!-- Trying to change pic when hovered -->
+                    <!-- Making pic opaque when hovered -->
                     <!-- Using id with external css -->
-                    <img id="dogpic" src = "Media/Brandons_Dog.jpg" alt=" A picture of Brandon's Dog">
+                    <img id="dogpic" src = "Media/Brandons_Dog.jpg" alt="A picture of Brandon's Dog" title="Coco">
                 </div>
 
                 <div class="col">
@@ -125,30 +126,37 @@
                         <li>Down Below by Roddy Rich</li>
                         <li>Best Part (feat. H.E.R.) by Daniel Caesar, H.E.R.</li>
                     </ol>
-                    <!-- feature commented out for now until javascript
-                    <h4>Please hover your mouse over the albums to hear some music! (WIP)</h4>
-                    -->
+
+                    <!-- Button to show and hide songs -->
+                    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#albumCollapse" aria-expanded="false" aria-controls="albumCollapse" style="margin-top: 2%">
+                        Show/hide songs
+                    </button> 
+                    
                 </div>
             </div>
 
-            <!-- Top margin to create space between rows -->
-            <!-- Using flex box to put pictures in row -->
-            <div class="d-flex flex-wrap" style="margin-top: 5%">
-                <div class="albumimg p-2 mr-auto">
-                    <img src="Media/Album Art/nova.jpg" width="200" alt="NOVA by RL Grime">
-                </div>
-                <div class="albumimg p-2 mr-auto">
-                    <img src="Media/Album Art/a moment apart.jpg" width="200" alt="A Moment Apart by ODESZA">
-                </div>
-                <div class="albumimg p-2 mr-auto">
-                    <img src="Media/Album Art/bobby tarantino.jpg" width="200" alt="Bobby Tarantino II by Logic">
-                </div>
-                <div class="albumimg p-2 mr-auto">
-                    <img src="Media/Album Art/down below.jpg" width="200" alt="Down Below by Roddy Rich">
-                </div>
-                <!-- has to be col-md otherwise it will go to next row. Not sure why this is the case -->
-                <div class="albumimg p-2 mr-auto">
-                    <img src="Media/Album Art/Freudian.jpg" width="200" alt="Freudian by Daniel Caesar">
+                
+            <!-- Collapse container -->
+            <div class="collapse" id="albumCollapse">
+                <h4 class="text-center">Please hover your mouse over the albums to hear some music!</h4>
+                <h4 class="text-center text-danger">(Work in progress)</h4>
+                <!-- Using flex box to put pictures in row -->
+                <div class="d-flex flex-wrap" style="margin-bottom: 5%;">
+                    <div class="albumimg p-2 mr-auto">
+                        <img src="Media/Album Art/nova.jpg" width="200" alt="Album art of NOVA by RL Grime" title="Atoms - Said the Sky Remix">
+                    </div>
+                    <div class="albumimg p-2 mr-auto">
+                        <img src="Media/Album Art/a moment apart.jpg" width="200" alt="Album art of A Moment Apart by ODESZA" title="Higher Ground (feat. Naomi Wild)">
+                    </div>
+                    <div class="albumimg p-2 mr-auto">
+                        <img src="Media/Album Art/bobby tarantino.jpg" width="200" alt="Album art of Bobby Tarantino II by Logic" title="44 More">
+                    </div>
+                    <div class="albumimg p-2 mr-auto">
+                        <img src="Media/Album Art/down below.jpg" width="200" alt="Album art of Down Below by Roddy Rich" title="Down Below">
+                    </div>
+                    <div class="albumimg p-2 mr-auto">
+                        <img src="Media/Album Art/Freudian.jpg" width="200" alt="Album art of Freudian by Daniel Caesar" title="Best Part (feat. H.E.R.)">
+                    </div>
                 </div>
             </div>
         </div>
