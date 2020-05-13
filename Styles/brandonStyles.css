@@ -1,38 +1,51 @@
 /* color gradient for background */
 body {
-    background: linear-gradient(#80e1ff, #d9f6ff);
+    background: linear-gradient(#303030, #444444);
 }
 
 h2 {
-    color: #00588f;
+    color: #47b3f7;
     font-size: 30px
 }
 
 h3 {
-    color: #00588f;
+    color: #47b3f7;
 }
 
+h4 {
+    font-size: small;
+}
+
+p, ol, ul, h4 {
+    color: #ffffff;
+}
+
+/* pretty sure bootstrap overrode this so I commented it out 
 .table, th, td {
     border: 1px solid black;
 }
+*/
 
 #title {
-    background-color: #35a5f0;
     font-size: large;
     text-align: center;
+    /* margin so navbar does not cover up title */
+    margin-top: 60px;
+    margin-bottom: 30px;
+    color: #ffffff;
 }
 
-/* formatting picture of my dog */
+/* formatting picture of my dog (from w3 schools example https://www.w3schools.com/css/css3_images.asp) */
 #dogpic {
-    width: 500px;
-    height: 400px;
-    border-radius: 70%;
+    width: 350px;
+    height: 300px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    padding: 5px;
 }
 
-/* make album images show side by side */
+/* make album images a bit transparent */
 .albumimg {
-    float: left;
-    width: 12.5%;
     opacity: 0.5;
 }
 

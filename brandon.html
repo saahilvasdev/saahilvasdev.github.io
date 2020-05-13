@@ -3,103 +3,151 @@
     <head> 
         <title>Brandon's Page</title>
         <link rel = "stylesheet" href = "Styles/brandonStyles.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
         <style>
-            /* bolds the first column of the contact table */
+            /* bolds the first column of the contact table, commented out since bootstrap has this function 
             td:first-child {
                 font-weight: bold;
             }
+            */
         </style>
     </head>
+    
     <body>
-        <div>
-            <!-- Using title ID -->
-            <div id="title">
-                <h1>Brandon Hu</h1>
+        <!-- Got from this site: https://getbootstrap.com/docs/4.0/components/navbar/ -->
+        <nav class="navbar navbar-expand-lg navbar-dark navbar fixed-top" style="background-color: #158bda;">
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="kenneth.html">Kenneth</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="saahil.html">Saahil</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="britnie.html">Britnie</a>
+                  </li>
+              </ul>
+            </div>
+        </nav>
+
+        <!-- Using title ID -->
+        <div id="title">
+            <h1>Brandon Hu</h1>
+        </div>
+
+        
+        <div class="container">
+            <div class="row">
+                <div class="col-md">
+                    <!-- Table for contact info to be neatly organized -->
+                    <h3>Contact Info</h3>
+                    <!-- Using table class -->
+                    <table class="table table-dark table-striped table-bordered table-sm col-sm-1">
+                        <tr>
+                            <th scope="row">Email</th>
+                            <td>bhu413@gmail.com</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Discord</th>
+                            <td>bhu413#8812</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">LinkedIn</th>
+                            <td><a href="https://www.linkedin.com/in/bhu413/">https://www.linkedin.com/in/bhu413/</a></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Github</th>
+                            <td><a href="https://github.com/bhu413">https://github.com/bhu413</a></td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="col-md">
+                    <h3>About me</h3>
+                    <p>
+                        I am a currently a junior at the University of Washington Bothell. My major is Applied Computing
+                        and I have experience with Java and C++. Currently, I am working at the UW/Cascadia College as 
+                        a student tech consultant where I help patrons with printing and common computer issues.
+                    </p>
+                </div>
             </div>
 
-            <div>
-                <h2>About me</h2>
-                <!-- Table for contact info to be neatly organized -->
-                <h3>Contact Info</h3>
-                <!-- Using table class -->
-                <table class="table" width="375">
-                    <tr>
-                        <td>Email</td>
-                        <td>bhu413@gmail.com</td>
-                    </tr>
-                    <tr>
-                        <td>Discord</td>
-                        <td>bhu413#8812</td>
-                    </tr>
-                    <tr>
-                        <td>LinkedIn</td>
-                        <td><a href="https://www.linkedin.com/in/bhu413/">https://www.linkedin.com/in/bhu413/</a></td>
-                    </tr>
-                    <tr>
-                        <td>Github</td>
-                        <td><a href="https://github.com/bhu413">https://github.com/bhu413</a></td>
-                    </tr>
-                </table>
+            <div class="row">
+                <div class="col">
+                    <h3>Classes Taken:</h3>
+                    <ul>
+                        <li>CSS 142 & 143</li>
+                        <li>CSS 342 & 343</li>
+                        <li>CSS 310</li>
+                        <li>BPHYS 121 & 122</li>
+                        <li>STMATH 124, 125, & 126</li>
+                    </ul>
+                </div>
 
-                <p>
-                    I am a currently a junior at the University of Washington Bothell. My major is Applied computing
-                    and I have experience with Java and C++. Currently, I am working at the UW/Cascadia College as 
-                    a student tech consultant where I help patrons with printing and common computer issues.
-                </p>
+                <div class="col">
+                    <p>
+                        <!-- Linking a wiki to a music piece which has emphasized text -->
+                        I am interested in computer networking and home automation. In my free time I like to game, make
+                        music, or just sleep. During this quarantine, I am trying to learn how to play Chopin's 
+                        <a href="https://en.wikipedia.org/wiki/Nocturne_in_C-sharp_minor,_Op._posth._(Chopin)">
+                            <em>Nocturne No. 20 in C-sharp minor, Op. posth.</em></a> I have a younger brother and a dog.
+                        
+                        <!-- Using span to show favorite color. -->
+                        <!-- Using strong to make it bold so it is easier to tell -->
+                        <strong>
+                            <span style="color:#00a7da">Also, this is my favorite color (or close to it at least).</span>
+                        </strong>
+                    </p>
+                </div>
+            </div>
 
-                <p>Here are a few classes I have taken:</p>
-                <ul>
-                    <li>CSS 142 & 143</li>
-                    <li>CSS 342 & 343</li>
-                    <li>CSS 310</li>
-                    <li>BPHYS 121 & 122</li>
-                    <li>STMATH 124, 125, & 126</li>
-                </ul>
-                
-                <p>
-                    <!-- Linking a wiki to a music piece which has emphasized text -->
-                    I am interested in computer networking and home automation. In my free time I like to game, make
-                    music, or just sleep. During this quarantine, I am trying to learn how to play Chopin's 
-                    <a href="https://en.wikipedia.org/wiki/Nocturne_in_C-sharp_minor,_Op._posth._(Chopin)">
-                        <em>Nocturne No. 20 in C-sharp minor, Op. posth.</em></a> I have a younger brother and a dog.
-                    
-                    <!-- Using span to show favorite color. -->
-                    <!-- Using strong to make it bold so it is easier to tell -->
-                    <strong>
-                        <span style="color:#00a7da">Also, this is my favorite color (or close to it at least).</span>
-                    </strong>
-                </p>
-                
-                <h3>Here is my dog Coco:</h3>
-                <!-- Trying to change pic when hovered -->
-                <!-- Using id with external css -->
-                <img id="dogpic" src = "Media/Brandons_Dog.jpg" alt=" A picture of Brandon's Dog">
-                
-                
-                <!-- Numbered list -->
-                <h3>Five songs I like at the moment</h3>
-                <ol>
-                    <li>Atoms - Said the Sky Remix by RL Grime, Jeremy Zucker, Said the Sky</li>
-                    <li>Higher Ground (feat. Naomi Wild) by ODESZA, Naomi Wild</li>
-                    <li>44 More by Logic</li>
-                    <li>Down Below by Roddy Rich</li>
-                    <li>Best Part (feat. H.E.R.) by Daniel Caesar, H.E.R.</li>
-                </ol>
+            <div class="row">
+                <div class="col-lg">
+                    <h3>Here is my dog Coco:</h3>
+                    <!-- Trying to change pic when hovered -->
+                    <!-- Using id with external css -->
+                    <img id="dogpic" src = "Media/Brandons_Dog.jpg" alt=" A picture of Brandon's Dog">
+                </div>
 
-                <!--INSTR: The images are being displayed funky, overlapping each other, probably because you hardcode their width to 200 pixels in the HTML but have the divs be a percentage. So it works if the browser window is > 1000 pixels but doesn't if the window is narrower.-->
-                <div class="albumimg">
+                <div class="col">
+                    <!-- Numbered list -->
+                    <h3>Five songs I like at the moment</h3>
+                    <ol>
+                        <li>Atoms - Said the Sky Remix by RL Grime, Jeremy Zucker, Said the Sky</li>
+                        <li>Higher Ground (feat. Naomi Wild) by ODESZA, Naomi Wild</li>
+                        <li>44 More by Logic</li>
+                        <li>Down Below by Roddy Rich</li>
+                        <li>Best Part (feat. H.E.R.) by Daniel Caesar, H.E.R.</li>
+                    </ol>
+                    <!-- feature commented out for now until javascript
+                    <h4>Please hover your mouse over the albums to hear some music! (WIP)</h4>
+                    -->
+                </div>
+            </div>
+
+            <!-- Top margin to create space between rows -->
+            <!-- Using flex box to put pictures in row -->
+            <div class="d-flex flex-wrap" style="margin-top: 5%">
+                <div class="albumimg p-2 mr-auto">
                     <img src="Media/Album Art/nova.jpg" width="200" alt="NOVA by RL Grime">
                 </div>
-                <div class="albumimg">
+                <div class="albumimg p-2 mr-auto">
                     <img src="Media/Album Art/a moment apart.jpg" width="200" alt="A Moment Apart by ODESZA">
                 </div>
-                <div class="albumimg">
+                <div class="albumimg p-2 mr-auto">
                     <img src="Media/Album Art/bobby tarantino.jpg" width="200" alt="Bobby Tarantino II by Logic">
                 </div>
-                <div class="albumimg">
+                <div class="albumimg p-2 mr-auto">
                     <img src="Media/Album Art/down below.jpg" width="200" alt="Down Below by Roddy Rich">
                 </div>
-                <div class="albumimg">
+                <!-- has to be col-md otherwise it will go to next row. Not sure why this is the case -->
+                <div class="albumimg p-2 mr-auto">
                     <img src="Media/Album Art/Freudian.jpg" width="200" alt="Freudian by Daniel Caesar">
                 </div>
             </div>
