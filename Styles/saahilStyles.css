@@ -52,13 +52,13 @@ a:hover{ /* When the user hover's their mouse over an "a" tag, the color of the 
     box-sizing: border-box;
 }
 
-.column{ /* This class is responsible for float images to the left with a width that is 1/3 of the page. Also gives 5px padding between the images */
+.columnCSS{ /* This class is responsible for float images to the left with a width that is 1/3 of the page. Also gives 5px padding between the images */
     float: left;
     width: 33.33%;
     padding: 5px;
 }
 
-.row::after{ /* This class is responsible for putting the images in table display */
+.rowCSS::after{ /* This class is responsible for putting the images in table display */
     content: "";
     display: table;
     clear: both;
