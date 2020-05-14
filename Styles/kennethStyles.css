@@ -1,6 +1,7 @@
 body{
     /* "a specific tag like, say, you want all <a> tags to be styled in a particular way," */
-    background-color:#fa9898;
+    /* important makes it have top priority so the color is pink */
+    background-color:#fa9898 !important;
 }
 /* "only certain subsets of tags by using the class="" attribute in a tag and specifying .class in the stylesheet," */
 .contactInfo {
@@ -35,19 +36,19 @@ div.showHidden:hover p.defaultHidden {
 /*"manipulation of images,"*/
 /* "or specific unique elements that need to be styled a certain way through using the id="" attribute and #id in the stylesheet."*/
 #profileImage{
-    width: 257px;
-    margin-left: 220px;
-    margin-top: 15px;
+    width: 357px;
+    /*margin-left: 220px;
+    margin-top: 15px;*/
 }
 #profileImageTwo{
-    width: 257px;
-    margin-left: 325px;
+    width: 357px;
+   /* margin-left: 325px;*/
     margin-top: 15px;
 }
 #profileImageThree{
-    width: 257px;
-    margin-left: 300px;
-    margin-top: 15px;
+    width: 357px;
+    /*margin-left: 300px;
+    margin-top: 15px;*/
 }
 
 #aggresive{
