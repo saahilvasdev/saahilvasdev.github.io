@@ -31,11 +31,11 @@ a:hover{ /* When the user hover's their mouse over an "a" tag, the color of the 
     color: #ff9900;
 }
 
-#differentColor{ /* This id changes the color of the text to violet */
+.differentColor{ /* This class changes the color of the text to violet */
     color: violet; 
 }
 
-#differentColor2{ /* This id changes the color of the text to burgandy */
+.differentColor2{ /* This class changes the color of the text to burgandy */
     color: red; 
 }
 
