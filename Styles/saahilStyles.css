@@ -2,6 +2,8 @@ body{ /* this is responsible for changing the whole background color */
     background: rgb(245, 248, 211);
 }
 
+
+
 h1{ /* This changes all h1 elements to bold, 50px size, and aligned in the center of the page */
     font-weight: bold;
     font-size: 50px;
@@ -14,7 +16,7 @@ h2{ /* This centers all h2 elements and changes the text-color to purple */
 }
 
 h3{ /* This changes all h3 elements to yellow */
-    color: #CAB600;
+    color: yellow;
 }
   
 a:hover{ /* When the user hover's their mouse over an "a" tag, the color of the text changes to red */
@@ -34,7 +36,7 @@ a:hover{ /* When the user hover's their mouse over an "a" tag, the color of the 
 }
 
 #differentColor2{ /* This id changes the color of the text to burgandy */
-    color: rgba(150, 4, 4, 0.842); 
+    color: red; 
 }
 
 .imageCenter{ /* This class is resposnbile for centering images */ 
