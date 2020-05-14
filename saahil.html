@@ -3,16 +3,17 @@
     <head> 
         <title>Saahil's Page</title>
         <link rel = "stylesheet" href = "Styles/saahilStyles.css">
+        <!--Linked Bootstrap 4 libraries into this HTML code-->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
         
     </head>
-    <body class = "bg-dark text-white" >
-        <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
-            <ul class="navbar-nav">
-                <li class="nav-item">
+    <body class = "bg-dark text-white" > <!--Using built-in classes in Bootstrap, the background of the webpage is dark and the text is white-->
+        <nav class="navbar navbar-expand-sm bg-dark navbar-dark"> <!--Added a Navbar-->
+            <ul class="navbar-nav"> <!--Using an unordered list, I was able to put my groupmates names in the NavBar-->
+                <li class="nav-item"> <!--When the user clicks on my groupmates names, it should redirect the user to their page-->
                   <a class="nav-link text-white" href="https://saahilvasdev.github.io/kenneth.html">Kenneth</a>
                 </li>
                 <li class="nav-item">
@@ -26,13 +27,13 @@
                 </li>
               </ul>
         </nav>
-        <div class = "jumbotron text-center">
+        <div class = "jumbotron text-center"> <!--Using the jumbotron class, the heading of the page was created and centered-->
             <h1 class = "card bg-dark text-white">Saahil Vasdev &#128526;</h1>
         </div>
 
-        <div class = "container">
-            <div class = "row">
-                <div class = "col-sm-6">
+        <div class = "container"> <!--Using the container class, it was able to put content (contain) and center that content-->
+            <div class = "row"> <!--Using the row class, it was responsible for the elements in a designated row-->
+                <div class = "col-sm-6"> <!--This class allows for me to fill up half of the 12 spaces on Bootstrap. This is repeated throughout the webpage.-->
                     <h3>About Me</h3>
                     <p>
                         I am currently a sophomore at the University of Washington Bothell studying Computer Science &
@@ -125,7 +126,7 @@
                     </p>
                 </div>
                 <div class = "col-sm-6">
-                    <h3 class = "text-right">Get in touch with me!</h3>
+                    <h3 class = "text-right">Get in touch with me!</h3> <!--Using the text-right, I was able to right align my paragraph-->
                     <p class = "text-right">
                         If you want to discuss anything, you can reach me through my email, <strong>skv21@uw.edu</strong>. You can keep up to date with my <a href = "https://github.com/saahilvasdev">GitHub</a> account to see what coding projects I'm currently working on. If you have a <a href = "http://linkedin.com/in/saahil-vasdev">LinkedIn</a>, please connect with me on there as I look 
                         forward to discuss any sort of job opportunities!
@@ -134,7 +135,7 @@
             </div>            
         </div>
         <div class = "container">
-            <div class = "d-flex flex-wrap">
+            <div class = "d-flex flex-wrap"> <!--This class utilizes the Flexbox element-->
                 <div class = "p-2 mr-auto">
                     <img src = "Media/Kobe8.jpg">
                 </div>
@@ -146,9 +147,9 @@
             <p class = "text-center"><em>Everything negative - pressure, challenges - is all an opportunity for me to rise. ~Kobe Bryant</em></p>
         </div>
         <br>
-        <div class="jumbotron text-center" style="margin-bottom:0">
+        <div class="jumbotron text-center" style="margin-bottom:0"> <!--The footer of the webpage-->
         <p class = "text-center">
-            <a href = "https://www.youtube.com/watch?v=_2zEqSCD7F4" class = "btn-lg btn-dark" role = "button">Click here for a funny video!</a>
+            <a href = "https://www.youtube.com/watch?v=_2zEqSCD7F4" class = "btn-lg btn-dark" role = "button">Click here for a funny video!</a> <!--Using the button feature on Bootstrap, I was able to link a video when the user clicked on it-->
         </p>
         
         </div>
