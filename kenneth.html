@@ -6,6 +6,7 @@
         <title>Kenneth's Page</title>
         <!-- "with an externally linked stylesheet text file using the <link rel=""> tag in the <head> tag" -->
         <link rel = "stylesheet" href = "Styles/kennethStyles.css">
+        <!-- this links bootstrap on the HTML page so it works correctly-->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
@@ -19,83 +20,140 @@
         </style>
     </head>
     <body>
-            <div> 
+        <!-- This makes the nav bar links to the left, makes the color of the bar white, and makes it to where it follows when the user scrolls-->
+        <nav class="navbar navbar-expand-sm bg-light fixed-top">
+            <!-- Brand/logo -->
+            <a class="navbar-brand" href="#">
+              <img src="https://cdn.discordapp.com/attachments/103660457113452544/706546432768999469/image0.jpg" alt="logo" style="width:87px;">
+            </a>
+            <!-- NavBar -->
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="https://saahilvasdev.github.io/britnie.html">Britnie</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://saahilvasdev.github.io/kenneth.html">Kenneth</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://saahilvasdev.github.io/saahil.html">Saahil</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://saahilvasdev.github.io/brandon.html">Brandon</a>
+              </li>
+            </ul>
+          </nav>
                 <!--this is so that my header has a seperate colorblock compared to the rest of the page background-->
                 <!-- "and in-line as a style="" attribute within another HTML tag "-->
-                <div style="background-color:#f73535">
+                <div style="background-color:#f73535; text-align: center; padding-top: 20px; padding-bottom: 20px; margin-bottom: 17px">
                     <!-- This adds color to my name and its using Header 1 with the help of span-->
-                    <h1> Kenneth Nguyen </h1>
+                    <h1 style="padding-top: 97px;"> (╯°□°）╯(Kenneth Nguyen) ︵ ┻━┻</h1>
                 </div>
-                <!-- width creates the width of the table, 300 is the value I choose how big I want it to -->
-                <!-- "only certain subsets of tags by using the class="" attribute in a tag and specifying .class in the stylesheet,"-->
-                <table class = "contactInfo">
-                    <tr>
-                        <td><strong>Contact List:</strong></td>
-                    </tr>
-                    <tr>
-                        <td><strong>Email</strong></td>
-                        <td>kennethmainguyen@gmail.com</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Discord</strong></td>
-                        <td>kinokima (Kenneth)#3924</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Instagram</strong></td>
-                        <td>kennethmnguyen</td>
-                    </tr>
-                </table>
-            </div>
-            <div> 
+                <!-- everything needs to be within a container so it can be correctly placed within the grid-->
+            <div class="container-md">
+                    <!-- width creates the width of the table, 300 is the value I choose how big I want it to -->
+                    <!-- "only certain subsets of tags by using the class="" attribute in a tag and specifying .class in the stylesheet,"-->
+                <div class="row">
+                    <!-- col-md aligns it to the center, I could do col-# to place it within the 12 grid locations-->
+                        <div class="col-md">
+                            <h2 style="background-color:#f73535; width: 207px; padding-left: 15px; color:rgb(255, 255, 255)">Contact Info</h2>
+                            <table class="table table-danger table-striped table-bordered table-sm col-sm-8">
+                                <tr>
+                                    <td><strong>Email</strong></td>
+                                    <td>kennethmainguyen@gmail.com</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>School Email</strong></td>
+                                    <td>nguyenkm@uw.edu</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Discord</strong></td>
+                                    <td>kinokima (Kenneth)#3924</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Instagram</strong></td>
+                                    <td>kennethmnguyen</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Club Penguin</strong></td>
+                                    <td>kinokima<br>I horde puffers in my igloo</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Life Motto</strong></td>
+                                    <td>A man with no sauce is lost, but the same man can be lost in the sauce.</td>
+                                </tr>
+                            </table>
+                        </div>
+                    <div class="col-md">
                 <!-- using header 2 and adding a salmon color to my name-->
                 <!-- with the help of span, I apply a personal style to the section where my "about me" is located-->
                 <!-- background color is the background, color is the text color, and padding adds spacing to the text so looks better-->
-                    <h2><span style="background-color:#f73535; color:rgb(255, 255, 255); padding: 0px 15px;">About Me  </span></h2>
-                <p> <!-- using P to add text/a paragraph below the About Me to say stuff to the viewer-->
-                    I am in my second year at the University of Washington Bothell studying interactive media design mainly. Its something I'm intes
-                    If you want to see my <em>digital portfolio</em>, its on <!-- this a href tag allows me to produce a clickable link. Also made it strong so it bolds out more -->
-                    <a href="https://kennethmnguyen.com"><strong>kennethmnguyen.com</strong></a>
-                </p>
-                <!-- this is to put a picture of myself on the website. Width of 500 so it fits right on the page-->
-                <!-- "or specific unique elements that need to be styled a certain way through using the id="" attribute and #id in the stylesheet."-->
-                <img id="profileImage" src= "Media/SunGun.jpg">
-                <img id="profileImageTwo" src= "Media/Myself2.jpg">
-                <img id="profileImageThree" src= "Media/NoTrust.png">
-                <p>
-                    During this COVID lockdown I've honestly been sleeping for very long times and not being the most productive.
-                    Watching a bunch of youtube videos and playing various different games. Glady though I was able to get ahold of some weights
-                    so I can still work out during a time where everything is closed.
-                </p>
-                <!-- creating a list and sectioning it off with adding colored text and a color block-->
-                <div>
-                    <h3><span style="background-color:#f73535; color:rgb(255, 255, 255); padding: 0px 15px">Heres some games I've been playing during this COVID lockdown</span></h3>
+                        <h2><span style="background-color:#f73535; color:rgb(255, 255, 255); padding: 0px 15px;">About Me  </span></h2>
+                        <p> <!-- using P to add text/a paragraph below the About Me to say stuff to the viewer-->
+                            I am in my second year at the University of Washington Bothell studying interactive media design mainly. Its something I'm intes
+                            If you want to see my <em>digital portfolio</em>, its on <!-- this a href tag allows me to produce a clickable link. Also made it strong so it bolds out more -->
+                            <a href="https://kennethmnguyen.com"><strong>kennethmnguyen.com</strong></a>.<br>
+                        </p>
+                        <p>
+                            During this COVID lockdown I've honestly been sleeping for very long times and not being the most productive.
+                            Watching a bunch of youtube videos and playing various different games. Glady though I was able to get ahold of some weights
+                            so I can still work out during a time where everything is closed.
+                        </p>
+                    </div>
                 </div>
-                <!-- creates a bullet list so I can name stuff down-->
-                <ul>
-                    <li>The Division 2</li>
-                    <li>TorchLight II</li>
-                    <li>Dragon Ball FighterZ</li>
-                    <li> DAEMON X MACHINA</li>
-                    <li>World War Z</li>
-                </ul>
-                <!-- creating a list and sectioning it off with adding colored text and a color block-->
-                <div>
-                    <h3><span style="background-color:#f73535; color:rgb(255, 255, 255); padding: 0px 15px">My top 6 shoes that I wear normally</span></h3>
+                <div class="row">
+                    <!-- Aligns text so that its centered-->
+                    <div style = "text-align: center"><br>
+                        <h2><span style="background-color:#f73535; color:rgb(255, 255, 255); padding: 0px 15px;">Picture of me</span></h2>
+                    <!-- added a flex/flex wrap to the photos so they are correctly placed on the website-->
+                            <div class="d-flex flex-wrap" style="margin-bottom: 7%;">
+                                <!-- this is to put a picture of myself on the website. Width of 500 so it fits right on the page-->
+                                <!-- "or specific unique elements that need to be styled a certain way through using the id="" attribute and #id in the stylesheet."-->
+                                <!-- P-2 is added to add spacing inbetween the photos-->
+                                <div class="p-2">
+                                    <img id="profileImage" src= "https://media.discordapp.net/attachments/103660457113452544/710356143922479184/IMG_3950.JPG?width=625&height=677">
+                                </div>
+                                <div class="p-2">
+                                    <img id="profileImageTwo" src= "Media/Myself2.jpg">
+                                </div>
+                                <div class="p-2">
+                                    <img id="profileImageThree" src= "https://media.discordapp.net/attachments/103660457113452544/710356194698461224/IMG_3951.JPG?width=614&height=677">
+                                </div>
+                            </div>
+                    </div>
                 </div>
-                <!-- creating a number list so I can name stuff in order-->
-                <ol>
-                    <li>1985 Jordan 1, Chicago/Neutral (or Natural) Grey/UNC colorway (Luckily I've been able to find 3 pairs that are wearable in my size)</li>
-                    <li>Triple White Bapesta (basically knockoff Air force 1s)</li>
-                    <li>Off White Blazers</li>
-                    <li>Basic Old Skool Vans</li>
-                    <li>Rick Owen Ramones</li>
-                    <li>New balance 990v4</li>
-                </ol>
+                     <!-- creating a list and sectioning it off with adding colored text and a color block-->
+                     <div class="row">
+                        <div class="col">
+                            <h3><span style="background-color:#f73535; color:rgb(255, 255, 255); padding: 0px 15px">Heres some games I've been playing</span></h3>
+                        <!-- creates a bullet list so I can name stuff down-->
+                            <ul>
+                                <li>The Division 2</li>
+                                <li>TorchLight II</li>
+                                <li>Dragon Ball FighterZ</li>
+                                <li> DAEMON X MACHINA</li>
+                                <li>World War Z</li>
+                            </ul>
+                        </div>
+                            <!-- creating a list and sectioning it off with adding colored text and a color block-->
+                            <div class="col">
+                                <h3><span style="background-color:#f73535; color:rgb(255, 255, 255); padding: 0px 15px">My top 6 shoes that I wear normally</span></h3>
+                            <!-- creating a number list so I can name stuff in order-->
+                            <ol>
+                                <li>1985 Jordan 1, Chicago/Neutral (or Natural) Grey/UNC colorway (Luckily I've been able to find 3 pairs that are wearable in my size)</li>
+                                <li>Triple White Bapesta (basically knockoff Air force 1s)</li>
+                                <li>Off White Blazers</li>
+                                <li>Basic Old Skool Vans</li>
+                                <li>Rick Owen Ramones</li>
+                                <li>New balance 990v4</li>
+                            </ol>
+                            </div>
+                        </div>
             </div>
+            <div> 
             <!-- "and hover and visibility changes links or other element" --> 
             <!-- "only certain subsets of tags by using the class="" attribute in a tag and specifying .class in the stylesheet,"-->
             <div class="showHidden">
-                <p>Theres a secret. Hover over this text to show it!</p>
+                <p style="text-align: center;"><strong><br>Theres a secret. Hover over this text to show it!</strong></p>
                 <!-- "only certain subsets of tags by using the class="" attribute in a tag and specifying .class in the stylesheet,"-->
                 <p class="defaultHidden"><strong>
                     ░▄▀▄▀▀▀▀▄▀▄░░░░░░░░░<br>
@@ -114,5 +172,4 @@
             </div>
         </div>
     </body>
-   
 </html>
