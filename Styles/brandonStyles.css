@@ -1,6 +1,7 @@
 /* color gradient for background */
 body {
-    background: linear-gradient(#303030, #444444);
+    /* background: linear-gradient(#303030, #444444); */
+    background-color: #252525;
 }
 
 h2 {
