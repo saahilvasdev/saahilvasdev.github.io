@@ -1,9 +1,25 @@
 <!doctype html>
 <html>
-    <head> 
+    <head>
         <title>Britnie's Page</title>
         <!-- externally linked stylesheet text file-->
-        <link rel = "stylesheet" href = "Styles/britnieStyles.css">
+        <link rel="stylesheet" href="Styles/britnieStyles.css">
+        <!-- this links bootstrap on the HTML page so it works correctly-->
+        <link rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+            integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+            crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+            crossorigin="anonymous"></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+            integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+            crossorigin="anonymous"></script>
+        <script
+            src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+            integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+            crossorigin="anonymous"></script>
         <!-- Specifc a tag in h1-->
         <style>
             h1{
@@ -12,73 +28,115 @@
         </style>
     </head>
     <body>
-        <div> 
-            <h1>Britnie Chin</h1>
-        </div>
-        <div>
-            <!--Created a table of contact list organized-->
-            <p><strong>Contact List</strong></p>
-            <table border = "1" width = "300">
-                <tr>
-                    <td><strong>Email</strong></td>
-                    <td>chinb8@uw.edu</td>
-                </tr>
-                <tr>
-                    <td><strong>Portfolio</strong></td>
-                    <td><a href="https://www.britniechin.com">https://www.britniechin.com</a></td>
-                </tr>
-                <tr>
-                    <td><strong>Instagram</strong></td>
-                    <td>britniechin</td>
-                </tr>
-            </table>
-        </div>
-        <div>
-            <!--in style format changed font color -->
-            <h2><span style="color:palevioletred">About Me</span></h2>
-            <p>
-                I am currently in my second year at the University of Washington Bothell studying business and a prospective 
-                Human Centered Design and Engineering student. I want to combine my business and UX background to translate business 
-                objectives into responsible and satisfying user experiences.  
-            </p>
-            <!--Created a bulleted list of the research I'm in-->
-            <p>Here are some research I have partcipated in:</p>
-            <ul>
-                <li>Pathways: Mapping HCDE Career Experiences </li>
-                <li>Participatory Design with Children and Researchers</li>
-                <li>KidsTeamUW: Creepy Project</li>
-                <li>UX Skills + ____ = Leadership</li>
+        <nav class="navbar navbar-expand-sm bg-light navbar-light">
+            <!-- NavBar -->
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link"
+                        href="https://saahilvasdev.github.io/britnie.html">Britnie</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link"
+                        href="https://saahilvasdev.github.io/kenneth.html">Kenneth</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link"
+                        href="https://saahilvasdev.github.io/saahil.html">Saahil</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link"
+                        href="https://saahilvasdev.github.io/brandon.html">Brandon</a>
+                </li>
             </ul>
+        </nav>
+        <div>
+            <h1 class="text-center" style="margin-bottom: 20px;">Britnie Chin</h1>
+        </div>
+        <div class="container-md">
+            <!-- Divided content into rows -->
+            <div class="row">
+                <div class="col-md">
+                    <!--Created a table of contact list organized-->
+                    <p><strong>Contact List</strong></p>
+                    <table border="1" width="300">
+                        <tr>
+                            <td><strong>Email</strong></td>
+                            <td>chinb8@uw.edu</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Portfolio</strong></td>
+                            <td><a href="https://www.britniechin.com">https://www.britniechin.com</a></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Instagram</strong></td>
+                            <td>britniechin</td>
+                        </tr>
+                    </table>
+                </div>
+                <!--in style format changed font color -->
+                <div class="col-md">
+                    <h2><span style="color:palevioletred">About Me</span></h2>
+                    <p>
+                        I am currently in my second year at the University of
+                        Washington Bothell studying business and a prospective
+                        Human Centered Design and Engineering student. I want to
+                        combine my business and UX background to translate business
+                        objectives into responsible and satisfying user experiences.
+                    </p>
+                    <!--Created a bulleted list of the research I'm in-->
+                    <p>Here are some research I have partcipated in:</p>
+                    <ul>
+                        <li>Pathways: Mapping HCDE Career Experiences </li>
+                        <li>Participatory Design with Children and Researchers</li>
+                        <li>KidsTeamUW: Creepy Project</li>
+                        <li>UX Skills + ____ = Leadership</li>
+                    </ul>
+                </div>
+            </div>
             <!--Added a link and changed the format of the font to italics and bold-->
             <p>
-                During quarantine I have been watching Netflix, running, biking and working on research. I have been working 
-                with <strong>Jason Yip</strong> on the <em>Creepy</em> Project trying to understand what creepy technology means to kids. 
-                For my other research project I have been conducting semi structured interviews 
-                with UX Leaders to understand the pathway to leadership! I am currently looking for more research experience for the summer
-                please connect with me on <a href = "https://www.linkedin.com/in/britniechin">LinkedIn</a>!
+                During quarantine I have been watching Netflix, running, biking
+                and working on research. I have been working
+                with <strong>Jason Yip</strong> on the <em>Creepy</em> Project
+                trying to understand what creepy technology means to kids.
+                For my other research project I have been conducting semi
+                structured interviews
+                with UX Leaders to understand the pathway to leadership! I am
+                currently looking for more research experience for the summer
+                please connect with me on <a
+                    href="https://www.linkedin.com/in/britniechin">LinkedIn</a>!
             </p>
             <p>Here's a photo of me on a bike ride during quarantine!</p>
             <!-- <img src="Media/bikeride.jpg" width="500"> -->
             <!--INSTR: I am not sure why, but the image hover event seems to be freaking out, causing the image to blink rapidly instead of just turning invisible... Are you seeing that too?-->
-            <img id="profile" src= "Media/bikeride.jpg">
-            <p>Here are my favorite bike routes:</p>
-            <!--Ordered list to create bike routes numbered-->
-            <!--The list tag allowed me to put values inside the ordered list-->
-            <ol>
-                <li>Burke Gilman</li>
-                <li>Interurban</li>
-                <li>Lake Washington Loop</li>
-                <li>Lake Sammamish Loop</li>
-                <li>Interurban to Snohomish</li>
-
-            </ol>
+            <div class = "row">
+                <div class = "col-md">
+                    <div class="d-flex flex-wrap" style="margin-bottom: 7%; text-align: center;">
+                        <div class="p-2">
+                            <img id="profile" src="Media/bikeride.jpg">
+                        </div>
+                    </div>
+                </div>
+                <div class ="col-md">
+                    <p>Here are my favorite bike routes:</p>
+                    <!--Ordered list to create bike routes numbered-->
+                    <!--The list tag allowed me to put values inside the ordered list-->
+                    <ol>
+                        <li>Burke Gilman</li>
+                        <li>Interurban</li>
+                        <li>Lake Washington Loop</li>
+                        <li>Lake Sammamish Loop</li>
+                        <li>Interurban to Snohomish</li>
+                    </ol>
+                </div>
+            </div>
             <div class="showHidden">
                 <p>Theres a secret. Hover over this text to show it!</p>
                 <!-- certain subset of tags using class attribute tag-->
                 <p class="defaultHidden"><strong>
-                    <!--unqiue elemtns styles in a certain way through id-->
-                    <span id="shrug"> ¯\_(ツ)_/¯</span>
-                </strong></p>
+                        <!--unqiue elemtns styles in a certain way through id-->
+                        <span id="shrug"> ¯\_(ツ)_/¯</span>
+                    </strong></p>
             </div>
         </div>
     </body>
