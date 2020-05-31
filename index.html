@@ -33,17 +33,17 @@
         <div class = "slideshow-container">
             <div class = "mySlides">
                 <div class = "numbertext">1/3</div>
-                <img src = "Images/Disney.jpeg" style = "width: 100%">
-                <div class = "text">The NBA considering to play at Walt Disney World? </div>
+                <a href = "https://www.nytimes.com/2020/05/23/sports/basketball/nba-disney-world-orlando.html"><img src = "Images/Disney.jpeg" style = "width: 100%"></a>
+                <div class = "text">The NBA considering to play at Walt Disney World?</div>
             </div>
             <div class = "mySlides">
                 <div class = "numbertext">2/3</div>
-                <img src = "Images/giannis-antetokounmpo-lebron-james.jpg" style = "width: 100%">
+                <a href = "https://www.nba.com/article/2020/03/06/kia-mvp-ladder-march-6-edition"><img src = "Images/giannis-antetokounmpo-lebron-james.jpg" style = "width: 100%"></a>
                 <div class = "text">Has the King been dethroned? Giannis Antetokounmpo is testing LeBron James for this year's MVP</div>
             </div>
             <div class = "mySlides">
                 <div class = "numbertext">3/3</div>
-                <img src = "Images/LastDance.jpg" style = "width: 100%">
+                <a href = "https://www.espn.com/nba/story/_/id/29180083/the-last-dance-how-replay-stream-espn-michael-jordan-documentary"><img src = "Images/LastDance.jpg" style = "width: 100%"></a>
                 <div class = "text">Jordan's documentary showcase his last few years of a dynasty with the Chicago Bulls</div>
             </div>
             <a class = "prev" onclick = "plusSlides(-1)">&#10094;</a>
@@ -100,7 +100,7 @@
             myIndex++;
             if (myIndex > x.length) {myIndex = 1}    
             x[myIndex-1].style.display = "block";  
-            setTimeout(carousel, 7000);
+            setTimeout(carousel, 10000);
             }
         </script>
         <br>
@@ -143,10 +143,20 @@
                         
                         tr:nth-child(even){background-color: #f2f2f233}
                     </style>
+        
                     <div>
                         <br>
+                        <style>
+                            th, td{
+                                text-align: center;
+                            }
+
+                        </style>
+
+
                         <h3>2019-2020 Statistics</h3>
-                        <table style = "width: 750px; border: 1px solid white">
+
+                        <table style = "width: 700px; border: 1px solid white">
                             <tr>
                                 <th>Name</th>
                                 <th>PPG</th>
@@ -155,7 +165,7 @@
                                 <th>SPG</th>
                                 <th>BPG</th>
                                 <th>Field Goal %</th>
-                                <th>Three-Point Goal %</th>
+                                <th>3PT Goal %</th>
                             </tr>
                             <tr>
                                 <td>LeBron James</td>
@@ -220,6 +230,17 @@
                             </tr>
                             
                         </table>
+
+                        <br>
+                        <div id="container">
+                            <h1>NBA Trivia Quiz</h1>
+                               <br/>
+                              <div id="quiz"></div>
+                            <div class="button" id="next"><a href="#">Next</a></div>
+                            <div class="button" id="prev"><a href="#">Prev</a></div> 
+                        </div>
+                        <script src="https://code.jquery.com/jquery-3.4.0.min.js"></script>
+                        <script src="trivia.js"></script>
                     
                     
                     </div>
@@ -227,6 +248,7 @@
                 
             </div>
         </div>
+        <div class="jumbotron text-center" style="margin-bottom:0"></div>
 
     </body>
 
