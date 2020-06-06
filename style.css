@@ -1,5 +1,34 @@
 * {box-sizing:border-box}
 
+h3{
+  color: rgb(238, 108, 108);
+}
+
+h4{
+  color: yellow;
+}
+
+h5{
+  background: linear-gradient(to right, #9900cc 0%, #ffffcc 100%);
+  color: black
+}
+
+h6{
+  color: yellow;
+}
+
+tr{
+  text-align: center;
+}
+
+table, th, td{
+  border: 1px solid white; 
+}
+
+th, td{
+  padding: 15px;
+}
+
 /* Slideshow container */
 .slideshow-container {
   max-width: 1000px;
@@ -116,6 +145,13 @@ td{
     display:none;
     width: 100px;
 }
+
 input[type="radio"]{
     cursor: pointer;
+}
+
+#test_status{
+  font-size: 20px;
+  text-align: center;
+  color: #00B9FB;
 }
