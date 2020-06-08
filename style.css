@@ -30,10 +30,6 @@ th, td{
   padding: 15px;
 }
 
-body{
-  /*background-image: url("/Images/nba.jpg"); */
-}
-
 .navbar {
   background-image: url("/Images/nba.jpg");
 }
