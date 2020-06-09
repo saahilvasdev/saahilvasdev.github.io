@@ -1,40 +1,40 @@
 * {box-sizing:border-box}
 
-h3{
+h3{ /* changes the color of the h3 tag */
   color: rgb(238, 108, 108);
 }
 
-h4{
+h4{ /* changes the color of the h4 tag */
   color: yellow;
 }
 
-h5{
+h5{ /* changes the background and color of the h5 tag */
   background: linear-gradient(to right, #9900cc 0%, #ffffcc 100%);
   color: black;
 }
 
-h6{
+h6{ /* changes the color of the h6 tag */
   color: yellow;
 }
 
-tr{
+tr{ /* aligns the table rows to the center */
   text-align: center;
 }
 
-table, th, td{
+table, th, td{ /* adds a white border and changes the background color to gray */
   border: 1px solid white; 
   background-color:#808080;
 }
 
-th, td{
+th, td{ /* adds padding */
   padding: 15px;
 }
 
-.navbar {
+.navbar { /* the navbar section has a background image */
   background-image: url("/Images/nba.jpg");
 }
 
-.jumbotron {
+.jumbotron { /* the jumbotron section has a background image */
   background-image: url("/Images/nba.jpg");
 }
 
@@ -115,21 +115,19 @@ th, td{
   transition: background-color 0.6s ease;
 }
 
-.active, .dot:hover {
+.active, .dot:hover { /* when the user hovers over the dot, the color changes */
   background-color: #717171;
 }
 
-.rightAlign{
+.rightAlign{ /* floats the contenet to the right */
   float: right;
 }
 
-td{
+td{ /* aligns the data the center */
   text-align: center;
 }
 
-.button 
-{
-    
+.button { /* responsible for button appearance */
     width: 80px;
     height: 25px;
     text-align: center;
@@ -138,28 +136,25 @@ td{
     margin: 0 2px 0 2px;
     cursor: pointer;
 }
-.button a 
-{
+.button a { /* this class is responsible for the button a by changing the color, text-decoration, and line height */
     text-decoration: none;
     color: #555;
     line-height: 25px;
 }
 
-#prev 
-{
+#prev { /* sets the display to none */
     display:none;
 }
-#start 
-{
+#start { /* sets the display to none and the width */
     display:none;
     width: 100px;
 }
 
-input[type="radio"]{
+input[type="radio"]{ /* this class is responsible for the cursor */
     cursor: pointer;
 }
 
-#test_status{
+#test_status { /* change the font size, alignment, and color */
   font-size: 20px;
   text-align: center;
   color: #00B9FB;
